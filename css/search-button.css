@@ -1,3 +1,18 @@
+:root {
+  --white: #fff;
+  --black: #000;
+  --dark: #333;
+  --gray: #666;
+  --light-gray: #999;
+  --purple-100: #d1a9f0;
+  --purple-300: #c283f3;
+  --purple-500: #9d5cd0;
+  --purple-700: #7943a4;
+  --green: #30bf39;
+  --blue: #26a5e4;
+  --red: #d11616;
+}
+
 button {
   background-color: transparent;
   border: 0;
@@ -28,7 +43,7 @@ input {
 .form-btn__open:hover rect,
 .form-btn__submit:hover path,
 .form-btn__submit:hover rect {
-  fill: orange;
+  fill: var(--purple-300);
 }
 .form-btn__submit {
   margin-right: 20px;
@@ -54,7 +69,7 @@ input {
   top: 50%;
   transform: translateY(-250%);
   right: 20px;
-  background-color: #fff;
+  background-color: transparent;
   opacity: 0;
   visibility: hidden;
 
@@ -68,9 +83,19 @@ input {
   padding: 5px;
   margin: 0;
   background: transparent;
-  border-bottom: 1px solid grey;
+  border-bottom: 1px solid white;
   margin-right: 20px;
+  transition: all 0.3s ease-in-out;
 }
+
+.form__input:hover {
+  border-bottom: 1px solid var(--purple-300);
+}
+
+.form__input:active {
+  border-bottom: 1px solid var(--purple-700);
+}
+
 .form__input:focus-visible {
   outline: 0;
   opacity: 0.8;
@@ -87,7 +112,7 @@ input {
 }
 
 .form__active {
-  transform: translateY(-50%);
+  transform: translateY(40%);
   opacity: 1;
   visibility: visible;
 }

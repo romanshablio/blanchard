@@ -1,5 +1,16 @@
 :root {
   --white: #fff;
+  --black: #000;
+  --dark: #333;
+  --gray: #666;
+  --light-gray: #999;
+  --purple-100: #d1a9f0;
+  --purple-300: #c283f3;
+  --purple-500: #9d5cd0;
+  --purple-700: #7943a4;
+  --green: #30bf39;
+  --blue: #26a5e4;
+  --red: #d11616;
 }
 
 a {
@@ -45,10 +56,19 @@ li {
   padding-left: 160px;
   padding-right: 160px;
   background-color: rgba(0, 0, 0, 0.5);
+  color: var(--white);
 }
 
 .footer-navbar__list {
   display: flex;
   justify-content: space-between;
   width: 80%;
+}
+
+.footer-navbar__button button {
+  color: var(--white);
+}
+
+.footer-navbar__dropitem {
+  cursor: pointer;
 }
